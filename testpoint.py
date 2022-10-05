@@ -5,7 +5,7 @@ def testpoint():
     test.setX(xcor)
     test.setY(ycor)
 
-    assert test.getx() == xcor
-    assert test.gety() == ycor
+    assert test.getX() == xcor
+    assert test.getY() == ycor
 
 

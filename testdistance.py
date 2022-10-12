@@ -6,6 +6,7 @@ def testdistance():
 	point1.setY(3)
 	point2.setX(4)
 	point2.setY(0)
-	test = Distance()
+	
+	assert Distance(point1, point2) == 5
 	
 	

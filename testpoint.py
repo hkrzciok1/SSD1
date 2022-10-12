@@ -1,3 +1,4 @@
+from Geometry import Point
 def testpoint():
     xcor = 3
     ycor = 5

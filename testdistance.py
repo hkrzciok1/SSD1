@@ -14,7 +14,7 @@ def testdistance():
 	point2.setX(-4)
 	point2.setY(0)
 	
-	assert Distance(point1, point2) == 3.61
+	assert Distance(point1, point2) == 6.71
 	# we are planning on using 2 places after decimal in our distance function
 	
 	point1.setX(2.5)
@@ -22,4 +22,4 @@ def testdistance():
 	point2.setX(-4)
 	point2.setY(6.8)
 
-	assert Distance(point1, point2) == 4.09
+	assert Distance(point1, point2) == 11.76

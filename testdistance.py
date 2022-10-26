@@ -1,4 +1,5 @@
 from Geometry import Point
+from Distance import Distance
 def testdistance():
 	point1 = Point()
 	point2 = Point()

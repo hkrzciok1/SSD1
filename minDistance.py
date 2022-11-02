@@ -7,9 +7,9 @@ place holders for the start and end point of the minimum distance.
 """
 def calcMinDist(Points):
 
-	minDist = Distance(Points[2],Points[3])
-	Points[0] = Points[2]
-	Points[1] = Points[3]
+	startIndex = 0
+	endIndex = 1
+	minDist = Distance(Points[0],Points[1])
 
 	for i in Points[2:]:
 		for j in Points[2:]:
@@ -17,6 +17,7 @@ def calcMinDist(Points):
 				tempDist = Distance(i,j)
 				if(tempDist < minDist):
 					minDist = tempDist
-					Points[0] = i
-					Points[1] = j
-	return minDist
+					startIndex = i
+					endIndex = j
+
+	return minDist,Points[startIndex],Points[endIndex]

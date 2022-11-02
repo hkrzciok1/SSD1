@@ -5,6 +5,7 @@ from minDistance import calcMinDist
 def testMinDist():
 	listOfPoints = []
 
+	distance = 0
 	start = None
 	end = None
 
@@ -20,15 +21,14 @@ def testMinDist():
 	p3.setX(4)
 	p3.setY(4)
 
-	listOfPoints.append(start)
-	listOfPoints.append(end)
 	listOfPoints.append(p1)
 	listOfPoints.append(p2)
 	listOfPoints.append(p3)
 	
+	
 	for point in listOfPoints:
 		print(point)
-
-	assert (calcMinDist(listOfPoints) == 1)
-	assert(listOfPoints[0] == p1)
-	assert(listOfPoints[1] == p2)
+	distance,start,end = calcMinDist(listOfPoints)
+	assert (distance == 1)
+	assert(start == p1)
+	assert(end == p2)

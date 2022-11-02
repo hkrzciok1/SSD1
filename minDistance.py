@@ -2,8 +2,8 @@ from Geometry import Point
 from Distance import Distance
 
 """
-calcMinDist function passes in a list of points whos first 2 items are
-place holders for the start and end point of the minimum distance.
+calcMinDist function passes in a list of points and
+returns the distance, start and end point of the minimum distance.
 """
 def calcMinDist(Points):
 

@@ -26,5 +26,5 @@ while addPoint.lower() != 'no':
 
 MinD, pt1, pt2 = calcMinDist(my_list)
 print('The smallest distance is ', str(MinD))
-print('The first point is ', pt1.getX())
-print('The second point is ', pt2.getY())
+print('The first point is ', pt1.getX(), ',' , pt1.getY())
+print('The second point is ', pt2.getX(), ',' , pt2.getY())

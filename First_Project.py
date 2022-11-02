@@ -1,17 +1,19 @@
 import math
 from Geometry import Point
+from minDistance import calcMinDist
+
 my_list = []
 count = 0
 addPoint = ""
 
 while addPoint.lower() != 'no':
 
-    pointInput = input('Enter X'+str(count)+',Y'+str(count)+': ')
+    pointInput = input('Enter X' + str(count) + ',Y' + str(count) + ': ')
     point = Point()
-    point.setX(pointInput.split(',')[0])
-    point.setY(pointInput.split(',')[1])
+    point.setX(int(pointInput.split(',')[0]))
+    point.setY(int(pointInput.split(',')[1]))
 
-    if count >0:
+    if count > 0:
         addPoint = input('Do you want more?')
 
     try:
@@ -22,6 +24,7 @@ while addPoint.lower() != 'no':
     count += 1
 
 
-
-print(my_list)
-
+MinD, pt1, pt2 = calcMinDist(my_list)
+print('The smallest distance is ', str(MinD))
+print('The first point is ', pt1.getX())
+print('The second point is ', pt2.getY())

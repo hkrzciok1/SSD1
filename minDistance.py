@@ -11,8 +11,8 @@ def calcMinDist(Points):
 	endIndex = 1
 	minDist = Distance(Points[0],Points[1])
 
-	for i in Points[2:]:
-		for j in Points[2:]:
+	for i in Points:
+		for j in Points:
 			if(i != j):
 				tempDist = Distance(i,j)
 				if(tempDist < minDist):
